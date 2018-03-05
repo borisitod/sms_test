@@ -15,7 +15,7 @@
                 }
                 var t = '?body=';
 
-            if (typeof ios !== 'undefined') { // add your own iOS check
+            if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) { // add your own iOS check
                 t = '&body=';
             }
             
