@@ -1,1 +1,28 @@
-<a href="sms:0451102058?body=asdasdsadasd">Link</a>
+
+
+
+
+<a id='link2' href='javascript:void(0)'>Link</a>
+
+<script type="text/javascript">
+   var p = '';
+                var c = "asdsadasdasdasdasd";
+                if (typeof url !== 'undefined'){
+                    if (url !== '' && url !== null){
+                        c += "For more detail, visit " + url;
+                    }
+                }
+                var t = '?body=';
+
+            if (typeof ios !== 'undefined') { // add your own iOS check
+                t = '&body=';
+            }
+            
+            var href = 'sms:'+ p + t + c;
+            // var mlink = document.createElement('a');
+            // mlink.setAttribute('href', href);
+            window.location = href;
+			document.getElementById("link2").setAttribute("href",href);
+			console.log(href);
+
+</script>
