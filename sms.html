@@ -99,7 +99,7 @@ var BakersChoice = BakersChoice || {};
     switch (platform){
         case 'sms': 
                 var p = '';
-                var c = text.substring(0,400);
+                var c = text;
                 if (typeof url !== 'undefined'){
                     if (url !== '' && url !== null){
                         c += "For more detail, visit " + url;
